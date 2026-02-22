@@ -3,51 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkHub: Farel Hanafi</title>
-    <link rel="icon" href="/img/link-solid.svg">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Farel Hanafi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="/img/profile.jpg" alt="John's Profile Picture">
+    <nav class="navbar" id="navbar">
+        <div class="nav-content container">
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
-        <!-- Heading -->
-        <h1>Connect with Me</h1>
+    </nav>
 
-        <!-- Bio Section -->
-        <div class="bio">
-            <a style="font-weight: bold;">Hi! I'm Rein.</a>
-            <br>
-            <a> Orang Gajelas.</a>
+    <header class="hero" id="home">
+        <div class="container hero-content fade-in">
+            <div class="profile-container slide-up">
+                <img src="profile.png" alt="My Profile" class="profile-img">
+            </div>
+            <h1 class="stagger-1">Hi, I'm <span class="accent">Farel Hanafi</span></h1>
+            <p class="stagger-2">Building modern web interfaces with a focus on performance, accessibility, and exceptional user experience.</p>
+            <div class="hero-cta stagger-3">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
         </div>
-        
-        <!-- Social Links -->
-        <div class="links">
-            <a href="https://github.com/FarelHanafi" target="_blank">
-                <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <a href="https://www.tiktok.com/@rein4everrr" target="_blank">
-                <i class="fa-brands fa-tiktok"></i> TikTok
-            </a>
-            <a href="https://wa.me/6282334226291/" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i> Whatsapp Bot
-            </a>
-            <a href="https://instagram.com/@irvnfrlh" target="_blank">
-                <i class="fa-solid fa-instagram"></i> Instagram
-            </a>
-            <a href="https://discord.gg/YEFzt93z" target="_blank">
-                <i class="fa-brands fa-discord"></i> Discord Server
-            </a>
+    </header>
+
+    <section id="about" class="about section">
+        <div class="container fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a web developer passionate about minimalist design and clean code. I believe that simplicity is the ultimate form of sophistication.</p>
+                    <p>My main focus is creating lightweight, fast, and fully responsive websites without relying on heavy libraries, providing the best experience for every user.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item scale-up">
+                        <h3>6+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item scale-up">
+                        <h3>40+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <!-- Footer -->
-        <footer>
-            <p>Made with ❤️ by Rein.s</p>
-        </footer>
+    </section>
+
+    <section id="skills" class="skills section bg-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card hover-lift">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), Web Performance Optimization</p>
+                </div>
+                <div class="skill-card hover-lift">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first approach, Flexbox, CSS Grid, Media Queries</p>
+                </div>
+                <div class="skill-card hover-lift">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3>Backend & API</h3>
+                    <p>Node.js, Express, RESTful API Design, Database Integration</p>
+                </div>
+                <div class="skill-card hover-lift">
+    <div class="skill-icon">
+        <svg viewBox="0 0 24 24" width="32" height="32" stroke="currentColor" stroke-width="2" fill="none">
+            <path d="M12 2v4M12 18v4M4 12H2M22 12h-2M5 5l-1.5-1.5M20.5 20.5L19 19M5 19l-1.5 1.5M20.5 3.5L19 5"></path>
+            <circle cx="12" cy="12" r="4"></circle>
+        </svg>
     </div>
+    <h3>AI & Machine Learning</h3>
+    <p>Python, TensorFlow, PyTorch, Data Preprocessing, Model Training & Deployment</p>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <div class="container fade-in">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-grid">
+                
+    <!-- WhatsApp AI Bot -->
+<article class="project-card">
+    <div class="project-info">
+        <h3>WhatsApp Real-Time AI Bot</h3>
+        <p>
+            A sophisticated WhatsApp bot powered by real-time AI that handles automatic replies, smart interactions, and complex conversation flows with high responsiveness and reliability.
+        </p>
+        <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">AI Integration</span>
+            <span class="tag">Baileys</span>
+        </div>
+        <a href="https://github.com/Eliasilyz/WHATSAPP-AI-BOT" class="project-link" target="_blank">
+            View Repo
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</article>
+
+<article class="project-card">
+    <div class="project-info">
+        <h3>Discord Automation & AI Bot</h3>
+        <p>
+            A highly interactive Discord bot built with smart commands, automated responses, event handling, and utility tools that improve community engagement and moderation.
+        </p>
+        <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Discord.js</span>
+            <span class="tag">Automation</span>
+        </div>
+        <a href="https://github.com/Eliasilyz/RellBotv2" class="project-link" target="_blank">
+            View Repo
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</article>
+
+<article class="project-card">
+    <div class="project-info">
+        <h3>Anime Streaming Web App</h3>
+        <p>
+            A responsive anime streaming web application with search and content navigation. Designed from scratch using vanilla HTML, CSS, and JavaScript with focus on performance and usability.
+        </p>
+        <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Vanilla JS</span>
+        </div>
+        <a href="https://github.com/Eliasilyz/Anime-Streaming" class="project-link" target="_blank">
+            View Repo
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</article>
+
+<article class="project-card">
+    <div class="project-info">
+        <h3>Admin Dashboard UI</h3>
+        <p>
+            An interactive admin dashboard interface for managing internal data, complete with responsive charts, dynamic tables, and intuitive filtering features for optimal user experience.
+        </p>
+        <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+        </div>
+        <a href="https://github.com/Eliasilyz/Admin-Dashboard" class="project-link" target="_blank">
+            View Repo
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</article>
+
+<article class="project-card">
+    <div class="project-info">
+        <h3>Express API Backend</h3>
+        <p>
+            A lightweight and scalable RESTful API backend built with Express.js. Designed to handle routing and structured data endpoints efficiently for web applications.
+        </p>
+        <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST API</span>
+        </div>
+        <a href="https://github.com/Eliasilyz/express-api" class="project-link" target="_blank">
+            View Repo
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+        </a>
+    </div>
+</article>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section bg-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Full-Stack Developer & AI Integration Specialist</h3>
+        <span class="timeline-date">2023 – Present</span>
+        <p>
+            Designing, building, and deploying full-stack web applications and real-time AI bots including WhatsApp and Discord automation. Integrated intelligent systems to handle automatic responses and optimized backend performance for real-world usage.
+        </p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Web & Automation Developer</h3>
+        <span class="timeline-date">2021 – 2023</span>
+        <p>
+            Developed interactive web applications such as a responsive anime streaming platform and custom admin dashboards. Created automation tools including smart Discord bots and complex backend logic using JavaScript and related technologies.
+        </p>
+    </div>
+</div>
+
+<div class="timeline-item">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+        <h3>Junior Developer & API Creator</h3>
+        <span class="timeline-date">2019 – 2021</span>
+        <p>
+            Built lightweight websites and RESTful APIs using vanilla JavaScript and Express.js. Focused on performance optimization, clean code structure, and delivering responsive user experiences without heavy frameworks.
+        </p>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p>Interested in collaborating or have a new project? Feel free to reach out via this contact form or through my social media channels below.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item hover-lift">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>farelcuy122@gmail.com</span>
+                        </div>
+                        <div class="contact-detail-item hover-lift">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <span>@faraelh_</span>
+                        </div>
+                        <div class="contact-detail-item hover-lift">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>linkedin.com/in/farel-hanafi-16717b3a6</span>
+                        </div>
+                        <div class="contact-detail-item hover-lift">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            <span>Discord: Rell#9872</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; © 2026 Farel Hanafi. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/eliasilyz" aria-label="Github"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                    <a href="https://www.linkedin.com/in/farel-hanafi-16717b3a6" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
